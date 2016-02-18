@@ -80,4 +80,4 @@ if __name__ == '__main__':
     demodulated_data = qpsk_obj.demodulate(equalized_ofdm_received_data)
     # xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-    # print(sum(input_data == demodulated_data[:10000]))
+    print(sum(input_data == demodulated_data[:10000]))

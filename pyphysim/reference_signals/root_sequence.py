@@ -137,7 +137,7 @@ class RootSequence(object):
     """
     n_sc_PRB = 12  # Number of subcarriers in a PRB in LTE
 
-    def __init__(self, root_index: int, size: int=None, Nzc: int=None):
+    def __init__(self, root_index, size=None, Nzc=None):
         if size is None and Nzc is None:
             raise AttributeError("Either 'size' or 'Nzc' (or both) must "
                                  "be provided.")

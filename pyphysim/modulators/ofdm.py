@@ -39,7 +39,9 @@ class OFDM(object):
         Raises
         ------
         ValueError
-            If the any of the parameters are invalid."""
+            If the any of the parameters are invalid.
+        """
+
         self.fft_size = 0
         self.cp_size = 0
         self.num_used_subcarriers = 0
@@ -66,6 +68,7 @@ class OFDM(object):
         ValueError
             If the any of the parameters are invalid.
         """
+
         if (cp_size < 0) or cp_size > fft_size:
             msg = ("cp_size must be nonnegative and cannot be greater "
                    "than fft_size")
