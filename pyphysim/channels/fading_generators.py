@@ -24,6 +24,7 @@ def generate_jakes_samples(Fd, Ts=1e-3, NSamples=100, L=8, shape=None,
 
     Parameters
     ----------
+
     Fd : float
         The Doppler frequency (in Hertz).
     Ts : float
@@ -69,13 +70,13 @@ def generate_jakes_samples(Fd, Ts=1e-3, NSamples=100, L=8, shape=None,
         if shape is None:
             phi_l = np.random.rand(L, 1)
         else:
-            phi_l = np.random.rand(L, *shape, 1)
+            phi_l = np.random.rand(L, shape, 1)
 
     if psi_l is None:
         if shape is None:
             psi_l = np.random.rand(L, 1)
         else:
-            psi_l = np.random.rand(L, *shape, 1)
+            psi_l = np.random.rand(L, shape, 1)
 
     # Update the self._current_time variable with the value of the next
     # time sample that should be generated when _generate_time_samples
