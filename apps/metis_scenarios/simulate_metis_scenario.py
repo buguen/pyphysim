@@ -7,6 +7,7 @@ Simulator for the SINRs of a dense indoor scenario.
 The scenario is a very simplified version of the Test Case 2 from the METIS
 project. Only one floor of one building is simulated and only the indoor
 access points are considered.
+
 """
 
 # xxxxxxxxxx Add the parent folder to the python path. xxxxxxxxxxxxxxxxxxxx
@@ -104,7 +105,7 @@ def calc_num_walls(side_length, room_positions, ap_positions):
     """
     Calculate the number of walls between each room to each AP.
 
-    This is used to calculated the wall losses as well as the indoor
+    This is used to calculate the wall losses as well as the indoor
     pathloss.
 
     Parameters
@@ -208,7 +209,7 @@ def simulate_for_a_given_ap_assoc(
         The path loss (in LINEAR SCALE) from each discrete position in each
         room to each access point. Dimension: (n, n, d, d, a) where 'n' is
         the number of rooms per dimension, 'd' is the number of discrete
-        positons in one room (per dimension) and 'a' is the number of
+        positions in one room (per dimension) and 'a' is the number of
         access points.
     ap_assoc : 4D numpy int array
         The index of the access point that each discrete point in each room

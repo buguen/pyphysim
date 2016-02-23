@@ -673,6 +673,7 @@ class TdlChannel(object):
 
     Parameters
     ----------
+
     fading_generator : T <= FadingSampleGenerator
         The instance of a fading generator in the `fading_generators`
         module. It should be a subclass of FadingSampleGenerator. The
@@ -1228,7 +1229,7 @@ class TdlChannel(object):
 
 
 class TdlMimoChannel(TdlChannel):
-    """
+    """ 
     Tapped Delay Line channel model, which corresponds to a multipath
     channel.
 
